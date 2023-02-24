@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# A script that displays dir content in list format after '-'
+i=0
+for i in *
+do
+	echo "$i" | cut -f2 -d'-'
+done
