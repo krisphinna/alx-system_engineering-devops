@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+# A script to displays Fizz, Buzz, Fizzbuzz when num is multiple of 3, 5 and 3&5 respctively
+for i in {1..100}
+do
+	if ((i % 3 == 0 && i % 5 == 0))
+	then
+		echo "Fizzbuzz"
+	elif ((i % 3 == 0))
+	then
+		echo "Fizz"
+	elif ((i % 5 == 0))
+	then
+		echo "Buzz"
+	else
+		echo $i
+	fi
+done
